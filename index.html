@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+<body>
+    
+  <h1>ABC Company Check-in</h1>
+    <div id="qrcode"></div>
+    <div id="check-in-form" style="display: none;">
+        <input type="text" id="name" placeholder="Your name">
+        <input type="text" id="appointment-time" placeholder="Appointment time">
+        <button onclick="submitCheckIn()">Submit</button>
+    </div>
+    <div id="welcome-message" style="display: none;"></div>
+    <ul id="check-in-list"></ul>
+    <button onclick="removeAll()">Remove All</button>
+    
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
